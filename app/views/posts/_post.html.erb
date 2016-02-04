@@ -1,0 +1,16 @@
+<p>
+	<h2>
+		<%= post.title%>
+	</h2>
+</p>
+
+<p>
+	<%= simple_format post.content %>
+</p>
+
+
+<p class="text-muted">
+	<small>
+		Post on <% post.created_at.to_formatted_s(:long)%>
+	</small>
+</p>
