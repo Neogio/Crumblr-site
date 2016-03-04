@@ -5,6 +5,9 @@
 </p>
 
 <p>
+	<% if post.kind =='image'%>
+	Show the image
+	<else>
 	<%= simple_format post.content %>
 </p>
 
