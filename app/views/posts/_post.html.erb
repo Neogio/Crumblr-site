@@ -1,19 +1,20 @@
 <p>
 	<h2>
-		<%= post.title%>
+		<%= link_to post.title, post%>
 	</h2>
 </p>
 
 <p>
 	<% if post.kind =='image'%>
-	Show the image
-	<else>
+	<%= image_tag post.content, style: "width: 100%" %>
+		<% else %>
 	<%= simple_format post.content %>
+	<% end %>
 </p>
 
 
 <p class="text-muted">
 	<small>
 		Post on <% post.created_at.to_formatted_s(:long)%>
-	</small>
+</small>
 </p>

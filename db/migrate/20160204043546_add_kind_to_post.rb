@@ -1,5 +1,5 @@
 class AddKindToPost < ActiveRecord::Migration
   def change
-    add_column :posts, :string, :string
+    add_column :posts, :kind, :string
   end
 end
